@@ -1,0 +1,30 @@
+@api = http://localhost:5000/users
+@api2 = http://localhost:5000/user
+
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name": "Cameron",
+  "email": "camero@gmail.com",
+  "password": "46sd42"
+}
+
+###
+GET {{api}}
+
+###
+GET {{api2}}/62c668c129b87638b15dafdc
+
+###
+DELETE {{api}}/62c666dec65dc7d7bce89e31
+
+###
+PUT {{api}}/62c6682a7b79d42d62fdc74d
+Content-Type: application/json
+
+{
+  "name": "Cameron",
+  "email": "camero2@gmail.com",
+  "password": "46sd42"
+}
